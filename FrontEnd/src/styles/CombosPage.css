@@ -1,0 +1,72 @@
+.combos-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background: #f8f9fa;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.combos-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.combos-form input,
+.combos-form select {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.combos-form button {
+  background: #8f03b1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.combos-success {
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.combos-error {
+  color: #d90429;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.combos-lista {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.combos-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1rem 1.5rem;
+  min-width: 220px;
+  max-width: 320px;
+}
+
+.combos-tag {
+  display: inline-block;
+  background: #8f03b1;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

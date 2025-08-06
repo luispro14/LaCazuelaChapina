@@ -1,0 +1,110 @@
+.cuentas-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background: #f8f9fa;
+  box-sizing: border-box;
+  /* Asegura que no se superponga al sidebar */
+  width: 100%;
+}
+
+.cuentas-title {
+  font-size: 2rem;
+  color: #8f03b1;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.cuentas-empty,
+.cuentas-loading {
+  text-align: center;
+  color: #888;
+  margin-top: 2rem;
+}
+
+.cuentas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.cuenta-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+  min-width: 220px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 260px; /* Permite que las tarjetas crezcan y se ajusten */
+}
+
+.cuenta-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(143,3,177,0.13);
+}
+
+.cuenta-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #8f03b1;
+}
+
+.cuenta-nombre {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #333;
+}
+
+.cuenta-disponible {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.cuenta-disponible strong {
+  color: #8f03b1;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+/* Responsive: una columna en móvil */
+@media (max-width: 900px) {
+  .cuentas-grid {
+    gap: 1rem;
+  }
+  .cuenta-card {
+    min-width: 180px;
+    max-width: 100%;
+    padding: 1.2rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cuentas-container {
+    padding: 1rem 0.5rem;
+  }
+  .cuentas-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .cuentas-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cuenta-card {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
+  }
+}
